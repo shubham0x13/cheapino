@@ -186,25 +186,25 @@ module mcu() {
 module mounting_hole() {
     color("#bcbd22")
     translate([45.85, -23, 0]) {
-      cylinder(h=1.5, r1=1, r2=2.2);
-
-      translate([0,0,1.5])
-      cylinder(h=4, r=2.2);
+      cylinder(h=0.7, d=2);
+      
+      translate([0,0,0.7])
+      cylinder(h=1.5, d1=2, d2=4);
+      
+      translate([0,0,2.2])
+      cylinder(h=0.3, d=4);
     }
 }
 
 module bumper() {
     color("#17becf")
-    translate([41, 29, 2.5])
-      cylinder(h=2, r=5);
-    color("#17becf")
-    translate([41, 29, 1.3])
-      cylinder(h=1.2, r1=4.5, r2=5);
+    translate([41, 29, 1.25])
+    cylinder(h=1.25, d=8.15);
 }
 
 module magnet() {
     color("#9467bd")
-    cylinder(h=2.1, r=3.05);
+    cylinder(h=2.1, d=6.1);
 }
 
 module switches(bottom) {
@@ -319,8 +319,7 @@ module case() {
     color("red")
     for (i = [0:step:8.1])
     {
-        // factor = sqrt(pow(9.1, 2) - pow(i, 2));
-        factor = min(3 - abs(i*0.7-3), 2.5);
+        factor = min(3 - abs(i*0.7-3), 1.5);
         //echo(pow(i, 2));
         //echo(factor);
         translate([0,0,i]) //height_translation])
@@ -362,7 +361,7 @@ module switch_hole() {
           translate([0.2,13.8,0]) circle(d=1);
         }
       }
-      linear_extrude(3.5) {
+      linear_extrude(3.53) {
           translate([4.5, -1, 0])
           color("yellow") square([5, 1]);
           translate([4.5, 14, 0])
@@ -392,7 +391,8 @@ module mounting_hole_insert() {
     color("#bcbd22")
     translate([45.85, -23, 0]) {
       translate([0,0,4.1])
-      cylinder(h=4, r=1.4);
+      
+      cylinder(h=4, d=3.65);
     }
 }
 

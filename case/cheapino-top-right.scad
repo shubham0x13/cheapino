@@ -26,14 +26,11 @@ mirror() {
 
     // RJ45 socket
     color("cyan") {
-        translate([29.2, -9.33, 4.1])
+        translate([29.2, -9.33, 2.5])
         linear_extrude(10)
         square([30, 16.6]);
-
-        translate([45, -4.53, 2.5])
-        linear_extrude(10)
-        square([15, 7]);
     }
+
 
     // EC11 encoder
     color("pink") {

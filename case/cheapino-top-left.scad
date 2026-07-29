@@ -24,13 +24,9 @@ translate([0, 0, top_of_pcb]) diodes();
 
 // RJ45 socket
 color("cyan") {
-    translate([29.2, -10.6, 4.1])
+    translate([29.2, -10.6, 2.5])
     linear_extrude(10)
     square([30, 16.6]);
-
-    translate([45, -5.8, 2.5])
-    linear_extrude(10)
-    square([15, 7]);
 }
 
 mcu_cutout();
