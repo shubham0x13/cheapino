@@ -1,6 +1,8 @@
 Cheapino
 ========
 
+> **Note:** This is the `personal-build` branch — documenting the case mods I made and the parts/sources I used for my own **v2** build (India-based sourcing). See the [build notes](doc/personal_build.md) for details. For the original project, switch to the [`master` branch](../../tree/master) or visit the [upstream repository](https://github.com/tompi/cheapino).
+
 Probably one of the cheapest split keyboards you can build.
 
 ![V2 in case](doc/gallery/27.png)
