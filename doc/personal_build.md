@@ -26,7 +26,7 @@ If the fit needs adjusting, you can grab the source `.step` or `.f3d` files for 
 
 ## PCB Fabrication
 
-> For how to order (uploading gerbers, settings, etc.), see the [ordering guide](orderingguide.md#the-pcb).
+For how to order (uploading gerbers, settings, etc.), see the [ordering guide](orderingguide.md#the-pcb).
 
 For India, use [Robu.in](https://robu.in/pcb-manufacturing/) or [Zbotic.in](https://zbotic.in/pcb-manufacturing/), which proxy your order to JLCPCB while handling shipping and customs. Ordering from JLCPCB directly might be cheaper but customs clearance in India is unpredictable, so probably not worth the risk.
 
